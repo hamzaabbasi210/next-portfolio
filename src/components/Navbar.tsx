@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { useTheme } from "next-themes";
 import { FaMoon, FaSun } from "react-icons/fa";
+import { TbBrandFiverr } from "react-icons/tb";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -17,12 +18,24 @@ export default function Navbar() {
         <h1 className="text-base font-bold md:text-2xl">Hamza Abbasi</h1>
       </div>
       <div className="space-x-2">
-        <button className="transform rounded-lg bg-black px-2 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-          <FaGithub />
-        </button>
-        <button className="transform rounded-lg bg-black px-2 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
-          <FaLinkedin />
-        </button>
+        <a
+          href="https://www.linkedin.com/in/hamza-abbasi-38b9922b9/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="transform rounded-lg bg-black px-2 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+            <FaLinkedin />
+          </button>
+        </a>
+        <a
+          href="https://www.fiverr.com/hamzaabbassi210"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="transform rounded-lg bg-black px-2 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200">
+            <TbBrandFiverr />
+          </button>
+        </a>
         <button
           onClick={() => changeTheme()}
           className="transform rounded-lg bg-black px-2 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"

@@ -3,15 +3,14 @@
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import SectionHeading from "./SectionHeading";
-import { jucijellies } from "../../public/projects-hero-sections/juicyjellies.png";
 export default function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
 
-  const title = "My Work";
+  const title = "Case Studies";
   const desc =
-    "From front-end frameworks to backend systems and cloud deployment, these are the technologies I specialize in.";
+    "Real projects showing how I help businesses turn ideas into effective, easy-to-use digital solutions.";
   return (
     <div className="w-full h-full">
       <SectionHeading title={title} description={desc} />
@@ -88,7 +87,7 @@ const data = [
     content: (
       <div className="w-full h-[65vh] rounded-xl overflow-hidden">
         <iframe
-          src="http://chotabhai.com/"
+          src="http://ellavita.com/"
           className="w-full h-full border-0"
           loading="lazy"
         />

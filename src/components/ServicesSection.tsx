@@ -49,7 +49,7 @@ export default function ServicesSection() {
   const title = "What I Offer";
   const desc = "I craft modern web experiences with a focus on performance, design, and scalability."
   return (
-    <div className="">
+    <div className="bg-white dark:bg-black">
       <SectionHeading title={title} description={desc} />
       {/* <div className="relative mx-auto mt-12 max-w-7xl flex flex-col items-center justify-center">
         <div className="px-4 py-10 md:py-20">
@@ -111,7 +111,6 @@ export default function ServicesSection() {
                   ease: "easeIn",
                 }}
                 viewport={{ once: true, amount: 0.2 }}
-                key={ind}
                 className="relative bg-gradient-to-b dark:from-neutral-900 from-neutral-100 dark:to-neutral-950 to-white p-6 rounded-3xl overflow-hidden group transition-all duration-300 hover:scale-[1.02] hover:ring-2 hover:ring-orange-400/40"
               >
                 <div className="pointer-events-none absolute left-1/2 top-0 -ml-20 -mt-2 h-full w-full [mask-image:linear-gradient(white,transparent)]">
@@ -176,7 +175,7 @@ export default function ServicesSection() {
                 <p className="text-base font-bold text-neutral-800 dark:text-white relative z-20 transition-all duration-300 group-hover:translate-x-2">
                   {val.title}
                 </p>
-                <p className="text-neutral-600 dark:text-neutral-400 mt-4 text-base font-normal relative z-20 transition-opacity duration-300 group-hover:opacity-90">
+                <p className="text-neutral-600 dark:text-gray-400 mt-4 text-base font-normal relative z-20 transition-opacity duration-300 group-hover:opacity-90">
                   {val.description}
                 </p>
               </motion.div>

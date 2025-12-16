@@ -8,7 +8,7 @@ export default function ExpandableCardDemo() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
     null
   );
-  const ref = useRef<HTMLDivElement>(null);
+  // const ref = useRef<HTMLDivElement>(null);
   const id = useId();
 
   useEffect(() => {
@@ -28,8 +28,9 @@ export default function ExpandableCardDemo() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [active]);
 
-  useOutsideClick(ref, () => setActive(null));
-
+  // useOutsideClick(ref, () => setActive(null));
+const ref = useRef<HTMLDivElement>(null!);
+useOutsideClick(ref as React.RefObject<HTMLDivElement>, () => setActive(null));
   return (
     <>
       <AnimatePresence>

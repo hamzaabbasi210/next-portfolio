@@ -1,12 +1,12 @@
-import AppleCardsCarouselDemo from "@/components/apple-cards-carousel-demo";
+import AppleCardsCarouselDemo from "@/components/AppleCardsCarouselDemo";
 import { HeroSectionOne } from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import SkillsSection from "@/components/SkillsSection";
 import WorkSection from "@/components/WorkSection";
-
+import { cn } from "@/lib/utils";
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <HeroSectionOne />
       <ServicesSection />
       {/* <WorkSection /> */}
